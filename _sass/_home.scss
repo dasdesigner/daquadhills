@@ -20,6 +20,20 @@
             --btn-phone-bg: #809c80;
             --btn-phone-hover: #6d886d;
             --check-icon-color: #2b452e;
+            --bg-canvas: #ffffff;
+            --text-heading: #141c15;
+            --text-subtitle: #4a544c;
+            --text-body: #404a42;
+            --tag-bg: #b28a6e;
+            --btn-green: #335338;
+            --btn-green-hover: #26402a;
+             --badge-green: #819b87;
+            --badge-green-hover: #6d8573;
+            --text-dark: #1b1e1c;
+            --star-color: #555b57;
+            --divider-color: #abb0ad;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            
         }
 
         body {
@@ -30,6 +44,8 @@
             padding: 0;
             overflow-x: hidden;
         }
+
+ 
 
         /* Hero Section Main Background with Subtle Soft Fog Overlay Effect */
         .resort-hero-section {
@@ -246,5 +262,279 @@
                 flex-direction: column;
                 align-items: flex-start !important;
                 gap: 20px !important;
+            }
+        }
+
+
+
+
+
+        /* Section Container */
+        .cottage-showcase-section {
+            width: 100%;
+            padding: 60px 0;
+        }
+
+        /* Title Typography */
+        .cottage-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+            font-weight: 500;
+            color: var(--text-heading);
+            line-height: 1.15;
+            letter-spacing: -0.3px;
+        }
+
+        /* Subtitle / Category */
+        .cottage-subtitle {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--text-subtitle);
+            text-transform: uppercase;
+        }
+
+        /* Amenity Badges / Tags */
+        .badge-amenity {
+            background-color: var(--tag-bg);
+            color: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 7px 16px;
+            border-radius: 50rem;
+            display: inline-block;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        /* Body Description Text */
+        .cottage-description {
+            font-size: 0.98rem;
+            line-height: 1.7;
+            color: var(--text-body);
+            font-weight: 400;
+            max-width: 520px;
+        }
+
+        /* Details CTA Button */
+        .btn-details {
+            background-color: var(--btn-green);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 13px 36px;
+            border-radius: 50rem;
+            border: none;
+            transition: all 0.25s ease;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(51, 83, 56, 0.15);
+        }
+
+        .btn-details:hover {
+            background-color: var(--btn-green-hover);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(51, 83, 56, 0.25);
+        }
+
+        /* Image Frame Container (Squircle / Rounding) */
+        .cottage-image-wrapper {
+            width: 100%;
+            border-radius: 48px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            aspect-ratio: 1.25 / 1;
+            background-color: #f2f5f2;
+        }
+
+        .cottage-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .cottage-image-wrapper:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 991.98px) {
+            .cottage-showcase-section {
+                padding: 40px 0;
+            }
+            .cottage-image-wrapper {
+                border-radius: 36px;
+                margin-top: 10px;
+            }
+            .cottage-description {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .cottage-image-wrapper {
+                border-radius: 28px;
+                aspect-ratio: 1.1 / 1;
+            }
+            .badge-amenity {
+                font-size: 0.78rem;
+                padding: 6px 13px;
+            }
+            .btn-details {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+
+        /* Container Card styling */
+        .callout-wrapper {
+            background-color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            display: inline-flex;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        /* Left Green Icon Badge (Squircle Pill shape) */
+        .badge-icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: var(--badge-green);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            flex-shrink: 0;
+            transition: transform 0.25s ease, background-color 0.25s ease;
+            box-shadow: 0 4px 12px rgba(129, 155, 135, 0.25);
+            cursor: pointer;
+        }
+
+        .badge-icon-box:hover {
+            background-color: var(--badge-green-hover);
+            transform: scale(1.04);
+        }
+
+        .badge-icon-box svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Top Row Rating Line */
+        .rating-line {
+            font-size: 1.05rem;
+            line-height: 1.4;
+            color: var(--text-dark);
+            letter-spacing: -0.1px;
+            font-weight: 400;
+        }
+
+        .rating-line strong {
+            font-weight: 700;
+        }
+
+        /* Vertical Divider between text and stars */
+        .rating-divider {
+            display: inline-block;
+            width: 1.5px;
+            height: 1.1em;
+            background-color: var(--divider-color);
+            margin: 0 0.85rem;
+            vertical-align: middle;
+        }
+
+        /* Star Rating Icons */
+        .star-group {
+            display: inline-flex;
+            gap: 2px;
+            color: var(--star-color);
+            margin-right: 0.6rem;
+            vertical-align: middle;
+        }
+
+        .star-group .bi-star-fill {
+            font-size: 0.95rem;
+        }
+
+        .rating-score {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        /* Bottom Row Tagline & CTA Link */
+        .callout-tagline {
+            font-size: 1.08rem;
+            line-height: 1.4;
+            color: var(--text-dark);
+            margin-top: 0.35rem;
+        }
+
+        .link-check-availability {
+            color: var(--text-dark);
+            font-weight: 800;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+            cursor: pointer;
+            transition: color 0.2s ease, opacity 0.2s ease;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .link-check-availability:hover {
+            opacity: 0.75;
+            color: #000000;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 575.98px) {
+            .callout-wrapper {
+                padding: 1.25rem 1rem;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1rem !important;
+            }
+
+            .badge-icon-box {
+                width: 48px;
+                height: 48px;
+                border-radius: 16px;
+            }
+
+            .badge-icon-box svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .rating-line {
+                font-size: 0.9rem;
+            }
+
+            .rating-divider {
+                margin: 0 0.5rem;
+            }
+
+            .star-group .bi-star-fill {
+                font-size: 0.82rem;
+            }
+
+            .rating-score {
+                font-size: 0.9rem;
+            }
+
+            .callout-tagline {
+                font-size: 0.92rem;
+                margin-top: 0.25rem;
             }
         }

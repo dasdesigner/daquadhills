@@ -108,6 +108,157 @@
     </section>
 
 
+<section class="cottage-showcase-section">
+     <div class="container d-flex justify-content-center">
+        
+        <div class="callout-wrapper gap-3 align-items-center">
+            
+            <!-- LEFT ICON BADGE: Green Squircle Pill with Calendar & Search Icon -->
+            <div class="badge-icon-box" data-bs-toggle="modal" data-bs-target="#availabilityModal" title="Check Availability">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Calendar Outer Box -->
+                    <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                    <!-- Magnifying Glass Search overlay inside/bottom of calendar -->
+                    <circle cx="11" cy="15" r="2.5"></circle>
+                    <path d="M13 17l2 2"></path>
+                </svg>
+            </div>
+
+            <!-- RIGHT TEXT CONTENT CONTAINER -->
+            <div class="d-flex flex-column justify-content-center">
+                
+                <!-- TOP RATING LINE -->
+                <div class="rating-line d-flex align-items-center flex-wrap">
+                    <span>Trusted By <strong>40,000+</strong> Users</span>
+                    <span class="rating-divider" aria-hidden="true"></span>
+                    <div class="d-inline-flex align-items-center">
+                        <div class="star-group" aria-label="5 out of 5 stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="rating-score">4.9/5</span>
+                    </div>
+                </div>
+
+                <!-- BOTTOM TAGLINE & CTA LINK -->
+                <div class="callout-tagline">
+                    <span>Plan your dream escape with us today. </span>
+                    <button class="link-check-availability" data-bs-toggle="modal" data-bs-target="#availabilityModal">
+                        Check Availability
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="availabilityModalLabel">Plan Your Dream Escape</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form onsubmit="event.preventDefault(); alert('Availability search submitted!');">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-muted">CHECK-IN</label>
+                                <input type="date" class="form-control rounded-3" value="2026-10-15">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-muted">CHECK-OUT</label>
+                                <input type="date" class="form-control rounded-3" value="2026-10-18">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold text-muted">GUESTS</label>
+                                <select class="form-select rounded-3">
+                                    <option selected>2 Adults, 0 Children</option>
+                                    <option>1 Adult</option>
+                                    <option>2 Adults, 1 Child</option>
+                                    <option>Family / Group (4+)</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn text-white w-full rounded-3 py-2.5 fw-bold" style="background-color: var(--badge-green); width: 100%;">
+                                    <i class="bi bi-search me-1"></i> Search Available Rooms
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+
+    <section class="cottage-showcase-section">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-4 g-lg-5">
+                
+                <!-- LEFT COLUMN: Content & Details -->
+                <div class="col-12 col-lg-6">
+                    <div class="pe-xl-3">
+                        
+                        <!-- Title -->
+                        <h1 class="cottage-title mb-1">
+                            The Scenic View Cottage
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <div class="cottage-subtitle mb-4">
+                            DELUX
+                        </div>
+
+                        <!-- Amenity Badges -->
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge-amenity">King Bed</span>
+                            <span class="badge-amenity">Rain Shower</span>
+                            <span class="badge-amenity">Private Balcony</span>
+                            <span class="badge-amenity">Premium View</span>
+                        </div>
+
+                        <!-- Body Description -->
+                        <p class="cottage-description mb-4">
+                            Nestled on a high ridge, this Delux cottage offers unparalleled panoramic 
+                            views of the entire valley from its private balcony. Experience morning 
+                            mist and stunning sunsets in complete privacy. Perfect for a secluded 
+                            escape.
+                        </p>
+
+                        <!-- CTA Button -->
+                        <div>
+                            <a href="#details" class="btn btn-details">
+                                Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Resort Cottage Architecture Image -->
+                <div class="col-12 col-lg-6">
+                    <div class="cottage-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1200&auto=format&fit=crop" 
+                             alt="The Scenic View Cottage Resort Architecture" 
+                             loading="lazy"
+                             onerror="this.onerror=null;this.src='https://placehold.co/800x600/325338/ffffff?text=Scenic+View+Cottage';">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
