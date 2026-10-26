@@ -49,10 +49,8 @@
 
         /* Hero Section Main Background with Subtle Soft Fog Overlay Effect */
         .resort-hero-section {
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.5) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.6) 0%, transparent 50%),
-                linear-gradient(135deg, #d8e4d6 0%, #e8f0e6 50%, #d5e2d3 100%);
+            background: var(--bg);
+                 
             min-height: 100vh;
             display: flex;
             align-items: center;

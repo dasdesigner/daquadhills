@@ -10,10 +10,145 @@
 </head>
 <body>
     
-    <div class="banner_container">
+  <!-- Main Hero Container -->
+  <div class="hero-container">
+    <div class="hero-overlay"></div>
 
+    <!-- Header / Navbar -->
+    <header class="hero-content-wrapper">
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-center py-3">
+          
+          <!-- Left spacer for desktop balance -->
+          <div class="col-4 d-none d-md-block"></div>
+
+          <!-- Centered Brand Logo -->
+          <div class="col-6 col-md-4 text-start text-md-center">
+            <a href="#" class="text-decoration-none d-inline-block">
+              <div class="brand-logo-container">
+                 
+                <h1 class="brand-title">Quad Hills</h1>
+                <div class="brand-subtitle">By Quadraht</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Action Controls -->
+          <div class="col-6 col-md-4 text-end">
+            <div class="d-flex align-items-center justify-content-end gap-3">
+              <button class="btn btn-book-now d-none d-sm-inline-block">Book Now</button>
+              
+              <!-- Offcanvas Menu Trigger Button -->
+              <button class="menu-toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Hero Central Text Content -->
+    <main class="hero-content-wrapper my-auto py-5">
+      <div class="container text-center px-4">
+        <h2 class="hero-heading fontdm">
+          Your Gateway to an<br />Unforgettable Escape
+        </h2>
+        <p class="hero-subtext">
+          Immerse yourself in the best luxury resort in Munnar, offering stunning views, infinity pool options, and elegant accommodation for a remarkable hill station escape.
+        </p>
+      </div>
+    </main>
+
+    <!-- Bottom Section & Floating Card Widget -->
+    <footer class="hero-content-wrapper pb-4">
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-end justify-content-end">
+          
+          <!-- Floating Trusted Clients Widget (Bottom Right) -->
+          <div class="col-auto">
+            <div class="trusted-card me-2 me-md-4 mb-3">
+              <div class="trusted-title">25k+ Trusted Clients</div>
+              
+              <!-- Client Avatars -->
+              <div class="avatar-group">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client 1" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client 2" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Client 3" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Client 4" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Client 5" class="avatar-img" />
+              </div>
+
+              <div class="card-divider"></div>
+
+              <!-- Rating & Stars -->
+              <div class="d-flex align-items-center justify-content-between mt-2">
+                <span class="rating-score">4.8</span>
+                <div class="text-end">
+                  <div class="rating-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="reviews-count">(5K Reviews)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mist Fog Bottom Overlay -->
+    <div class="fog-bottom"></div>
+
+
+    <video autoplay loop muted class="hero__video">
+      <source src="images/quadhilld-video-bg.mp4" type="video/mp4" loop="yes">
+    </video>
+
+  </div>
+
+  <!-- Offcanvas / Sliding Side Menu Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header p-4">
+      <h5 class="offcanvas-title font-serif" id="sideMenuLabel">
+        <span class="fw-bold tracking-wider">QUAD HILLS</span>
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    
+    <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+      <div>
+        <p class="text-uppercase text-muted fs-7 tracking-widest fw-semibold mb-3">Navigation</p>
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link active">Home</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">About Resort</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Rooms & Suites</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Infinity Pool & Spa</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Dining Experience</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Gallery</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contact Us</a></li>
+        </ul>
+      </div>
 
+      <div class="mt-auto pt-4 border-top border-secondary">
+        <div class="mb-3">
+          <div class="small text-muted mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Location</div>
+          <div class="small text-light">Munnar, Kerala, India</div>
+        </div>
+        <div class="mb-4">
+          <div class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>Reservations</div>
+          <div class="small text-light">+91 98765 43210</div>
+        </div>
+        <button class="btn btn-book-now w-full w-100 py-2">Book Your Stay</button>
+      </div>
+    </div>
+  </div>
     
 
      <section class="resort-hero-section">
@@ -66,15 +201,15 @@
                         <!-- Feature Bullets -->
                         <div class="d-flex flex-column gap-3 mb-4 pb-2">
                             <div class="feature-item">
-                                <i class="bi bi-check-circle-fill feature-icon"></i>
+                                <img src="images/check-icon.svg" alt="">
                                 <span>Panoramic views of the pristine coastline.</span>
                             </div>
                             <div class="feature-item">
-                                <i class="bi bi-check-circle-fill feature-icon"></i>
+                                <img src="images/check-icon.svg" alt="">
                                 <span>24/7 personalized concierge and room service.</span>
                             </div>
                             <div class="feature-item">
-                                <i class="bi bi-check-circle-fill feature-icon"></i>
+                                <img src="images/check-icon.svg" alt="">
                                 <span>Eco-friendly amenities and luxurious soaking tubs.</span>
                             </div>
                         </div>
@@ -90,7 +225,7 @@
                             <!-- Phone CTA -->
                             <a href="tel:+912545746366" class="phone-cta-wrapper">
                                 <div class="phone-icon-btn">
-                                    <i class="bi bi-telephone-fill"></i>
+                                    <img src="images/call-icon.svg" alt="">
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="call-label">Call Now</span>
@@ -258,6 +393,234 @@
         </div>
     </section>
 
+
+
+
+    
+<!-- ============ ROOMS ============ -->
+<section class="rooms" id="rooms">
+    <div class="wrap">
+        <div class="row g88 gy-4 align-items-center mb-5 mb-lg-0 room">
+            <div class="col-lg-5">
+                <h3 class="elsie mb-0">The Scenic View Cottage</h3><small>Delux</small>
+                <div class="d-flex flex-wrap gap-1 my-3"><span class="tag">King Bed</span><span class="tag">Rain Shower</span><span class="tag">Private Balcony</span><span class="tag">Premium View</span></div>
+                <p class="lh38">Nestled on a high ridge, this Delux cottage offers unparalleled panoramic views of the entire valley from its private balcony. Experience morning mist and stunning sunsets in complete privacy. Perfect for a secluded escape.</p>
+                <a href="#contact" class="btn btn-details">Details</a></div>
+            <div class="col-lg-7"><img class="rimg" src="images/the-scenic-view-cottage.jpg" alt="The Scenic View Cottage"></div>
+        </div>
+        <div class="my-lg-5 py-lg-4"></div>
+        <div class="row g88 gy-4 align-items-center mb-5 mb-lg-0 room">
+            <div class="col-lg-5">
+                <h3 class="elsie mb-0">The Garden View Cottage</h3><small>Executive</small>
+                <div class="d-flex flex-wrap gap-1 my-3"><span class="tag">Direct Garden Access</span><span class="tag">Private Patio</span><span class="tag">Private Patio</span><span class="tag">Lush Surroundings</span></div>
+                <p class="lh38">Step out from your spacious living area directly onto a beautifully landscaped, private garden. The Executive cottage combines modern comfort with immediate access to nature's tranquility. Includes a small, elegant working space.</p>
+                <a
+                href="#contact" class="btn btn-details">Details</a>
+            </div>
+            <div class="col-lg-7"><img class="rimg" src="images/the-garden-view-cottage.jpg" alt="The Garden View Cottage"></div>
+        </div>
+        <div class="my-lg-5 py-lg-4"></div>
+        <div class="row g88 gy-4 align-items-center mb-5 mb-lg-0 room">
+            <div class="col-lg-5">
+                <h3 class="elsie mb-0">The Hill View Cottage</h3><small>Premium</small>
+                <div class="d-flex flex-wrap gap-1 my-3"><span class="tag">Premium Living Area</span><span class="tag">Larger Layout</span><span class="tag">Fireplace</span><span class="tag">Forest View</span></div>
+                <p class="lh38">Positioned to capture the essence of the surrounding ancient hills. This Premium cottage features extra living space and a fireplace, offering a warm and inviting atmosphere with dense forest views. Ideal for couples or small families.</p>
+                <a
+                href="#contact" class="btn btn-details">Details</a>
+            </div>
+            <div class="col-lg-7"><img class="rimg" src="images/the-hill-view-cottage.jpg" alt="The Hill View Cottage"></div>
+        </div>
+        <div class="my-lg-5 py-lg-4"></div>
+        <div class="row g88 gy-4 align-items-center mb-5 mb-lg-0 room">
+            <div class="col-lg-5">
+                <h3 class="elsie mb-0">Honey Moon Cottage / Pool Villa</h3><small>Presidential</small>
+                <div class="d-flex flex-wrap gap-1 my-3"><span class="tag">Private Infinity Pool</span><span class="tag">Secluded Location</span><span class="tag">Spa Bathroom</span><span class="tag">Butler Service</span></div>
+                <p class="lh38">Our most exclusive offering. This Presidential Pool Villa is a sanctuary of ultimate luxury. Features a private infinity pool, a dedicated spa-like bathroom, and total seclusion, designed specifically for a honeymoon or special celebration.
+                    The pinnacle of personalized service.</p><a href="#contact" class="btn btn-details">Details</a></div>
+            <div class="col-lg-7"><img class="rimg" src="images/honey-moon-cottage-pool-villa.jpg" alt="Honey Moon Cottage / Pool Villa"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FACILITIES ============ -->
+<section class="fac py-5" id="facilities">
+  <img class="leaf d-none d-xl-block" src="assets/facilities-amenities1.jpg" alt="" style="left:calc(var(--u)*-37);top:0;width:calc(var(--u)*387)">
+  <div class="wrap position-relative py-lg-5">
+    <h2 class="elsie text-center mb-5">Facilities &amp; Amenities</h2>
+    <div class="row g90 gy-4 mb-4 mb-lg-5">
+      <div class="col-lg-6 order-2 order-lg-1"><img class="fimg" src="images/facilities-amenities1.jpg" alt=""></div>
+      <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column gap-3">
+            <div class="acard"><img src="images/fa-icon-1.svg" alt="" style="width:76.8px">
+                <div>
+                    <h4 class="elsie">Children's Play Area</h4>
+                    <p>A space for little guests to play and explore while parents relax and unwind nearby.</p>
+                </div>
+            </div>
+            <div class="acard"><img src="images/fa-icon-2.svg" alt="" style="width:72px">
+                <div>
+                    <h4 class="elsie">Bougainvillea Coffee Shop</h4>
+                    <p>Traditional evening tea and local snacks, as the afternoon cools into a mountain evening.</p>
+                </div>
+            </div>
+            <div class="acard"><img src="images/fa-icon-3.svg" alt="" style="width:72px">
+                <div>
+                    <h4 class="elsie">Car Parking &amp; EV Charging</h4>
+                    <p>Secure on-site parking with dedicated EV charging for guests travelling in electric vehicles.</p>
+                </div>
+            </div>
+            <div class="acard"><img src="images/fa-icon-4.svg" alt="" style="width:72px">
+                <div>
+                    <h4 class="elsie">Driver Accommodation</h4>
+                    <p>A comfortable, well-equipped space for drivers — so every member of your party is looked after.</p>
+                </div>
+            </div>
+            <div class="acard"><img src="images/fa-icon-5.svg" alt="" style="width:72px">
+                <div>
+                    <h4 class="elsie">Sunrise &amp; Sunset Viewpoint</h4>
+                    <p>A dedicated hilltop viewing area — watch the first light hit the hills, or the sky turn at dusk.</p>
+                </div>
+            </div>
+            <div class="acard"><img src="images/fa-icon-6.svg" alt="" style="width:72px">
+                <div>
+                    <h4 class="elsie">Hilltop Tea &amp; Snacks</h4>
+                    <p>On request, tea and light snacks served at the hilltop viewpoint, weather permitting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g90 gy-4">
+      <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="acard">
+                <img src="images/fa-icon-7.svg" alt="" style="width:76.8px">
+                <div>
+                <h4 class="elsie">Campfire Evenings</h4>
+                <p>Gather around the fire as evening comes alive — warmth and quality time under the cool Munnar sky.</p>
+                </div>
+            </div>
+            <div class="acard">
+                <img src="images/fa-icon-8.svg" alt="" style="width:80px">
+                <div>
+                <h4 class="elsie">Cycling Trails</h4>
+                <p>Pedal through the plantation, scenic trails and nearby villages while enjoying the fresh mountain air.</p>
+                </div>
+            </div>
+            <div class="acard">
+                <img src="images/fa-icon-9.svg" alt="" style="width:72px">
+                <div>
+                <h4 class="elsie">Badminton Court</h4>
+                <p>A friendly game with family and friends — an easy way to stay active on holiday.</p>
+                </div>
+            </div>
+            <div class="acard">
+                <img src="images/fa-icon-10.svg" alt="" style="width:72px">
+                <div>
+                <h4 class="elsie">Indoor Games</h4>
+                <p>Chess, carrom and card games for relaxed evenings and friendly competition indoors.</p>
+                </div>
+            </div>
+            <div class="acard">
+                <img src="images/fa-icon-11.svg" alt="" style="width:72px">
+                <div>
+                <h4 class="elsie">Candlelight Dinner</h4>
+                <p>A specially arranged, peaceful dining experience under the stars — for couples and special occasions.</p>
+                </div>
+            </div>
+            <div class="acard">
+                <img src="images/fa-icon-12.svg" alt="" style="width:72px">
+                <div>
+                <h4 class="elsie">Green Gym</h4>
+                <p>An open-air gym set among the greenery — a refreshing alternative to a closed workout room.</p>
+                </div>
+            </div>
+        </div>
+      <div class="col-lg-6"><img class="fimg" src="images/facilities-amenities2.jpg" alt=""></div>
+    </div>
+  </div>
+  <img class="leaf d-none d-xl-block" src="assets/4f1c3.jpg" alt="" style="right:calc(var(--u)*-100);bottom:calc(var(--u)*-60);width:calc(var(--u)*387);transform:scaleY(-1) rotate(-154.74deg)">
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="py-5" id="reviews"><div class="wrap">
+  <div class="text-center mb-5">
+    <p class="fw-semibold text-uppercase mb-1" style="font-size:15px;letter-spacing:3px;color:var(--k7)">What Our Customers Says</p>
+    <h2 class="elsie mb-0" style="font-size:clamp(1.7rem,2.124vw,40.785px)">Trusted by Clients Seeking True Relaxation</h2>
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-6">
+        <div class="tcard">
+            <div class="av"><img src="images/testimonials-profile-1.jpg" alt=""></div>
+            <p class="mb-0 text-black">Serena Tranquil</p><img src="images/star-rate.svg" alt="" width="60" height="10">
+            <p>Arrival to departure, everything felt luxurious. The calming atmosphere, natural scents, and professional service refreshed my mind and body completely. I left feeling radiant, balanced, service refreshed and beautifully renewed.</p>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="tcard">
+            <div class="av"><img src="images/testimonials-profile-2.jpg" alt=""></div>
+            <p class="mb-0 text-black">Serena Tranquil</p><img src="images/star-rate.svg" alt="" width="60" height="10">
+            <p>Arrival to departure, everything felt luxurious. The calming atmosphere, natural scents, and professional service refreshed my mind and body completely. I left feeling radiant, balanced, service refreshed and beautifully renewed.</p>
+        </div>
+    </div>
+  </div>
+  <div class="text-center mt-4"><img src="assets/910fa.svg" alt="" width="94" height="16"></div>
+</div></section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact py-5" id="contact"><div class="wrap">
+  <div class="row g-5 align-items-center" style="--bs-gutter-x:clamp(1.5rem,6.25vw,120px)">
+    <div class="col-lg-6 radiant">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3681392868275!2d77.04370821983366!3d9.986417984947426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07a38faae218c7%3A0x2cdc2f3e81ec579c!2sQuad%20Hills%20By%20Quadrant-%20Luxury%20Resort%20Munnar!5e0!3m2!1sen!2sin!4v1792573105728!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="col-lg-6">
+        <form class="d-flex flex-column gap-4" onsubmit="return false">
+            <div class="row g-4">
+                <div class="col-sm-6">
+                    <label class="fld"><img src="images/name-icon.svg" alt="">
+                        <input type="text" placeholder="Name">
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <label class="fld"><img src="images/email-icon.svg" alt="">
+                        <input type="email" placeholder="Email">
+                    </label>
+                </div>
+            </div>
+            <label class="fld"><img src="images/mobile-icon.svg" alt="">
+                <input type="tel" placeholder="Mobile Number">
+            </label>
+            <label class="fld align-items-start" style="min-height:113px"><img src="images/message-icon.svg" alt="">
+                <textarea rows="3" placeholder="Message"></textarea>
+            </label>
+            <button class="btn btn-details" type="submit">Submit</button>
+        </form>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <div class="wrap w-100">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4 text-center text-lg-end">
+            <div class="logo"><img class="a" src="assets/social-icon-2.svg" alt=""><img class="b" src="assets/social-icon-2.svg" alt=""><img class="c" src="assets/social-icon-2.svg" alt=""><i></i><i></i><i></i></div>
+            <div class="d-flex flex-column align-items-center align-items-lg-end gap-3">
+                <div class="d-flex gap-3">
+                    <a href="#"><img src="images/social-icon-1.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/social-icon-2.svg" alt="WhatsApp"></a>
+                    <a href="#"><img src="images/social-icon-3.svg" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div>
+                    <p class="mb-1">High Range Diary Road, Pothupara, Muthuvan Kudi, Keralam 685565</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-2 gap-lg-3">
+                        <span class="d-inline-flex align-items-center gap-2"><img src="images/contact-1.svg" alt="" width="24">+91 9061810000</span><span class="d-none d-sm-inline">•</span>
+                        <span class="d-inline-flex align-items-center gap-2"><img src="images/contact-2.svg" alt="" width="24">info@quadhills.com</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="pol"><span style="font-size:14px">•</span> <a href="#">Privacy Policy</a> <span style="font-size:14px">&nbsp;•&nbsp;</span> <a href="#">Terms and Conditions</a> <span style="font-size:14px">&nbsp;•&nbsp;</span> <a href="#">Cancellation Policy</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
