@@ -6,6 +6,13 @@
     <title>Quadhills</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="aos-master/dist/aos.css" />
+
     
 </head>
 <body>
@@ -25,22 +32,18 @@
           <!-- Centered Brand Logo -->
           <div class="col-6 col-md-4 text-start text-md-center">
             <a href="#" class="text-decoration-none d-inline-block">
-              <div class="brand-logo-container">
-                 
-                <h1 class="brand-title">Quad Hills</h1>
-                <div class="brand-subtitle">By Quadraht</div>
-              </div>
+              <img src="images/quadhills-logo-green.svg" alt="">
             </a>
           </div>
 
           <!-- Right Action Controls -->
           <div class="col-6 col-md-4 text-end">
             <div class="d-flex align-items-center justify-content-end gap-3">
-              <button class="btn btn-book-now d-none d-sm-inline-block">Book Now</button>
+              <button class="btn btn-details">Book Now</button>
               
               <!-- Offcanvas Menu Trigger Button -->
               <button class="menu-toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu" aria-label="Toggle navigation">
-                <i class="bi bi-list fs-2"></i>
+                <img src="images/menu.svg" alt="">
               </button>
             </div>
           </div>
@@ -52,7 +55,7 @@
     <!-- Main Hero Central Text Content -->
     <main class="hero-content-wrapper my-auto py-5">
       <div class="container text-center px-4">
-        <h2 class="hero-heading fontdm">
+        <h2 class="hero-heading elsie">
           Your Gateway to an<br />Unforgettable Escape
         </h2>
         <p class="hero-subtext">
@@ -61,54 +64,11 @@
       </div>
     </main>
 
-    <!-- Bottom Section & Floating Card Widget -->
-    <footer class="hero-content-wrapper pb-4">
-      <div class="container-fluid px-lg-5">
-        <div class="row align-items-end justify-content-end">
-          
-          <!-- Floating Trusted Clients Widget (Bottom Right) -->
-          <div class="col-auto">
-            <div class="trusted-card me-2 me-md-4 mb-3">
-              <div class="trusted-title">25k+ Trusted Clients</div>
-              
-              <!-- Client Avatars -->
-              <div class="avatar-group">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client 1" class="avatar-img" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client 2" class="avatar-img" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Client 3" class="avatar-img" />
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Client 4" class="avatar-img" />
-                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Client 5" class="avatar-img" />
-              </div>
-
-              <div class="card-divider"></div>
-
-              <!-- Rating & Stars -->
-              <div class="d-flex align-items-center justify-content-between mt-2">
-                <span class="rating-score">4.8</span>
-                <div class="text-end">
-                  <div class="rating-stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="reviews-count">(5K Reviews)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
-    <!-- Mist Fog Bottom Overlay -->
-    <div class="fog-bottom"></div>
+   
 
 
     <video autoplay loop muted class="hero__video">
-      <source src="images/quadhilld-video-bg.mp4" type="video/mp4" loop="yes">
+      <source src="https://cdn.pixabay.com/video/2023/06/01/165391-832742138_large.mp4" type="video/mp4" loop="yes">
     </video>
 
   </div>
@@ -124,9 +84,8 @@
     
     <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
       <div>
-        <p class="text-uppercase text-muted fs-7 tracking-widest fw-semibold mb-3">Navigation</p>
         <ul class="nav-menu-list">
-          <li class="nav-menu-item"><a href="#" class="nav-menu-link active">Home</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Home</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">About Resort</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">Rooms & Suites</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">Infinity Pool & Spa</a></li>
@@ -238,59 +197,50 @@
                     </div>
                 </div>
 
+
+                <div class="callout-wrapper wrapper__contact gap-3 align-items-center ">
+                    
+                    <!-- LEFT ICON BADGE: Green Squircle Pill with Calendar & Search Icon -->
+                    <div class="badge-icon-box" data-bs-toggle="modal" data-bs-target="#availabilityModal" title="Check Availability">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Calendar Outer Box -->
+                            <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                            <!-- Magnifying Glass Search overlay inside/bottom of calendar -->
+                            <circle cx="11" cy="15" r="2.5"></circle>
+                            <path d="M13 17l2 2"></path>
+                        </svg>
+                    </div>
+
+                    <!-- RIGHT TEXT CONTENT CONTAINER -->
+                    <div class="d-flex flex-column justify-content-center">
+                        
+                        <!-- TOP RATING LINE -->
+                        <div class="rating-line d-flex align-items-center flex-wrap">
+                            <span>Trusted By <strong>40,000+</strong> Users</span>
+                            <span class="rating-divider" aria-hidden="true"></span>
+                            <div class="d-inline-flex align-items-center">
+                                <span class="rating-score">4.9/5</span>
+                            </div>
+                        </div>
+
+                        <!-- BOTTOM TAGLINE & CTA LINK -->
+                        <div class="callout-tagline">
+                            <span>Plan your dream escape with us today. </span>
+                            <button class="link-check-availability" data-bs-toggle="modal" data-bs-target="#availabilityModal">
+                                Check Availability
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </section>
 
-
-<section class="cottage-showcase-section">
-     <div class="container d-flex justify-content-center">
-        
-        <div class="callout-wrapper gap-3 align-items-center">
-            
-            <!-- LEFT ICON BADGE: Green Squircle Pill with Calendar & Search Icon -->
-            <div class="badge-icon-box" data-bs-toggle="modal" data-bs-target="#availabilityModal" title="Check Availability">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <!-- Calendar Outer Box -->
-                    <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
-                    <!-- Magnifying Glass Search overlay inside/bottom of calendar -->
-                    <circle cx="11" cy="15" r="2.5"></circle>
-                    <path d="M13 17l2 2"></path>
-                </svg>
-            </div>
-
-            <!-- RIGHT TEXT CONTENT CONTAINER -->
-            <div class="d-flex flex-column justify-content-center">
-                
-                <!-- TOP RATING LINE -->
-                <div class="rating-line d-flex align-items-center flex-wrap">
-                    <span>Trusted By <strong>40,000+</strong> Users</span>
-                    <span class="rating-divider" aria-hidden="true"></span>
-                    <div class="d-inline-flex align-items-center">
-                        <div class="star-group" aria-label="5 out of 5 stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="rating-score">4.9/5</span>
-                    </div>
-                </div>
-
-                <!-- BOTTOM TAGLINE & CTA LINK -->
-                <div class="callout-tagline">
-                    <span>Plan your dream escape with us today. </span>
-                    <button class="link-check-availability" data-bs-toggle="modal" data-bs-target="#availabilityModal">
-                        Check Availability
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+ 
 
     <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -333,66 +283,7 @@
 
     </section>
 
-
-
-    <section class="cottage-showcase-section">
-        <div class="container py-lg-4">
-            <div class="row align-items-center g-4 g-lg-5">
-                
-                <!-- LEFT COLUMN: Content & Details -->
-                <div class="col-12 col-lg-6">
-                    <div class="pe-xl-3">
-                        
-                        <!-- Title -->
-                        <h1 class="cottage-title mb-1">
-                            The Scenic View Cottage
-                        </h1>
-
-                        <!-- Subtitle -->
-                        <div class="cottage-subtitle mb-4">
-                            DELUX
-                        </div>
-
-                        <!-- Amenity Badges -->
-                        <div class="d-flex flex-wrap gap-2 mb-4">
-                            <span class="badge-amenity">King Bed</span>
-                            <span class="badge-amenity">Rain Shower</span>
-                            <span class="badge-amenity">Private Balcony</span>
-                            <span class="badge-amenity">Premium View</span>
-                        </div>
-
-                        <!-- Body Description -->
-                        <p class="cottage-description mb-4">
-                            Nestled on a high ridge, this Delux cottage offers unparalleled panoramic 
-                            views of the entire valley from its private balcony. Experience morning 
-                            mist and stunning sunsets in complete privacy. Perfect for a secluded 
-                            escape.
-                        </p>
-
-                        <!-- CTA Button -->
-                        <div>
-                            <a href="#details" class="btn btn-details">
-                                Details
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN: Resort Cottage Architecture Image -->
-                <div class="col-12 col-lg-6">
-                    <div class="cottage-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1200&auto=format&fit=crop" 
-                             alt="The Scenic View Cottage Resort Architecture" 
-                             loading="lazy"
-                             onerror="this.onerror=null;this.src='https://placehold.co/800x600/325338/ffffff?text=Scenic+View+Cottage';">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
+ 
 
 
 
@@ -596,11 +487,11 @@
   </div>
 </div></section>
 
-<!-- ============ FOOTER ============ -->
+<!-- ============ FOOTER ============ -->   
 <footer>
     <div class="wrap w-100">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4 text-center text-lg-end">
-            <div class="logo"><img class="a" src="assets/social-icon-2.svg" alt=""><img class="b" src="assets/social-icon-2.svg" alt=""><img class="c" src="assets/social-icon-2.svg" alt=""><i></i><i></i><i></i></div>
+            <div class="logo"><img src="images/quadhills-logo-green.svg" alt=""></div>
             <div class="d-flex flex-column align-items-center align-items-lg-end gap-3">
                 <div class="d-flex gap-3">
                     <a href="#"><img src="images/social-icon-1.svg" alt="Facebook"></a>
@@ -624,5 +515,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+    
+ 
 </body>
 </html>
